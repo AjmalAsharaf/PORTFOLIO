@@ -1043,14 +1043,7 @@ a:hover {
   font-size: 13px;
 }
 
-.php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
+
 
 .php-email-form .sent-message {
   display: none;
