@@ -154,3 +154,27 @@
   });
 
 })(jQuery);
+
+//Form sending
+
+$("#submit-form").submit((e)=>{
+  e.preventDefault()
+  $.ajax({
+      url:"https://script.google.com/macros/s/AKfycbxOHlTi4PM5e1b_f05Ipq_4_rd74MxidzF8ygQP/exec",
+      data:$("#submit-form").serialize(),
+      method:"post",
+      success:function (response){
+        $('.sent-message').css({'display':'block'})
+          window.setTimeout(function (){
+            window.location.reload()
+          },2000)
+          
+          
+          
+      },
+      error:function (err){
+          alert("Something Error")
+
+      }
+  })
+})
